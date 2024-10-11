@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Perfume Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .slider {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        .slide {
+            display: inline-block;
+            width: 100vw; /* Full viewport width */
+            height: 300px; /* Fixed height for the banner */
+            animation: slide 10s infinite linear;
+        }
+        @keyframes slide {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body class="bg-gray-200">
+    
+    <header class="bg-gradient-to-r from-purple-600 to-blue-500 text-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center p-5 text-center">
+            <div class="w-32 h-32 overflow-hidden rounded-full">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/008/145/521/small/luxury-perfume-bottle-logo-design-illustration-for-cosmetics-beauty-salon-company-products-vector.jpg" alt="Circular Image" class="w-full h-full object-cover" />
+            </div>
+
+            <nav class="ml-2 md:ml-7">
+                <center>
+                    <ul class="flex flex-wrap justify-center md:space-x-8 space-x-2">
+                        <li><a href="/index.html" class="hover:text-gray-200 transition duration-300">Home</a></li>
+                        <li><a href="/about.html" class="hover:text-gray-200 transition duration-300">
+                    About Us</a></li>
+                        <li><a href="/product.html" class="hover:text-gray-200 transition duration-300">Products</a></li>
+                        <li>
+                           <a href="/contact.html"  class="hover:text-gray-200 transition duration-300">Contact Us</a>
+                        </li>
+                    </ul>
+                </center>
+            </nav>
+        </div>
+    </header>
+
+
+    
+    <div class="slider w-full h-64">
+
+        <div class="slide">
+            <img src="https://www.giftexpress.com/images/banner-full.jpg" class="h-full w-full object-cover bg-center" alt="Image 1">
+        </div>
+
+
+        <div class="slide">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/9dc9b1143747009.62800cea5df5c.jpg" class="h-full w-full object-cover bg-center" alt="Image 1">
+        </div>
+
+    </div>
+
+
+
+
+
+    <section class="container mx-auto py-8 text-right">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-right">
+            <div class="w-60 h-60 overflow-hidden rounded-full object-cover transition-transform duration-200 ease-in-out transform hover:scale-110">
+                <img src="https://img.freepik.com/premium-photo/row-perfume-bottles-with-different-colors-them_1131377-4384.jpg?ga=GA1.1.398903822.1728317372&semt=ais_hybrid" alt="Circular Image" class="h-full w-full" />
+            </div>
+
+            <div class="w-60 h-60 overflow-hidden rounded-full object-cover transition-transform duration-200 ease-in-out transform hover:scale-110">
+                <img src="https://img.freepik.com/premium-photo/black-perfume-tree-bark-dark-background_106006-12470.jpg?ga=GA1.1.398903822.1728317372&semt=ais_hybrid" alt="Circular Image" class="w-full h-full object-cover" />
+            </div>
+
+            <div class="w-60 h-60 overflow-hidden rounded-full object-cover transition-transform duration-200 ease-in-out transform hover:scale-110">
+                <img src="https://media.istockphoto.com/id/1326392724/photo/bottle-of-luxury-perfume-and-fresh-jasmine-flowers-on-beige-background-flat-lay.jpg?s=612x612&w=0&k=20&c=8pe5SZmqnAl0bdK8CK2pduYvavSfXVcCaRL3swndt2s=" alt="Circular Image" class="w-full h-full object-cover" />
+            </div>
+
+            <div class="w-60 h-60 overflow-hidden rounded-full object-cover transition-transform duration-200 ease-in-out transform hover:scale-110">
+                <img src="https://img.freepik.com/premium-photo/perfume-bottle-base-platform-background-mockup_1194642-198.jpg?size=626&ext=jpg&ga=GA1.1.398903822.1728317372&semt=ais_hybrid" alt="Circular Image" class="w-full h-full object-cover hover:image" />
+            </div>
+        </div>
+    </section>
+
+ 
+    
+
+   
+    <div class="bg-yellow-300 p-6 text-center rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold mb-2">🎉 Exciting News! 🎉</h1>
+        <p class="text-xl mb-4">🌟 <span class="font-bold text-red-600">Get 30% OFF on All Perfumes!</span> 🌟</p>
+        <p class="text-lg mb-4">
+            Now you can get your favorite fragrances at the best prices! For just a few days, take advantage of a <span class="font-semibold">30% discount</span> on every perfume.</p>
+        <a href="#shop" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300">Shop Now</a>
+        <p class="mt-4 text-lg font-semibold">Limited time offer! Hurry, while stocks last!</p>
+    </div>
+
+
+
+
+    <div class="text-center my-10 bg-gray-200">
+        <h2 class="text-2xl font-bold">Limited Time Offer!</h2>
+        <div id="countdown" class="flex justify-center space-x-4 mt-4">
+            <div>
+                <span id="days" class="text-4xl font-bold">00</span> Days
+            </div>
+            <div>
+                <span id="hours" class="text-4xl font-bold">00</span> Hours
+            </div>
+            <div>
+                <span id="minutes" class="text-4xl font-bold">00</span> Minutes
+            </div>
+            <div>
+                <span id="seconds" class="text-4xl font-bold">00</span> Seconds
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const countdownDate = new Date("Dec 31, 2024 23:59:59").getTime();
+        const x = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+    
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+    
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+
+
+<section class="py-10">
+    <h2 class="text-3xl font-bold text-center mb-6">Our Signature Collection</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="relative">
+            <img src="https://www.entirestore.pk/wp-content/uploads/2023/11/Dunhill-Desire.webp" alt="Perfume 1" class="w-full h-64 object-cover rounded-lg transition-transform transform hover:scale-105">
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center rounded-lg opacity-0 hover:opacity-100 transition-opacity">
+                <span class="text-white text-xl font-semibold">Dunhill-Desire</span>
+            </div>
+        </div>
+        <div class="relative">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.C6Odth-by0O1t3BJyG00qgHaE8&pid=Api&P=0&h=220" alt="Perfume 2" class="w-full h-64 object-cover rounded-lg transition-transform transform hover:scale-105">
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center rounded-lg opacity-0 hover:opacity-100 transition-opacity">
+                <span class="text-white text-xl font-semibold">Hogo-Boss</span>
+            </div>
+        </div>
+        <div class="relative">
+            <img src="https://theelegance.pk/wp-content/uploads/2023/08/J.-Janan-Perfume-for-Him-Online-Gifts-in-Paksitan.webp" alt="Perfume 3" class="w-full h-64 object-cover rounded-lg transition-transform transform hover:scale-105">
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center rounded-lg opacity-0 hover:opacity-100 transition-opacity">
+                <span class="text-white text-xl font-semibold"><big>J.</big>Janan</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="py-10 bg-gray-100 text-center">
+    <h2 class="text-3xl font-bold mb-6">Find Your Perfect Fragrance</h2>
+    <button id="quizButton" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Start the Quiz</button>
+    <div id="quiz" class="hidden mt-6">
+        <h3 class="text-2xl mb-4">What's your mood today?</h3>
+        <button id="re" class="bg-green-500 text-white py-1 px-4 rounded mx-2 hover:bg-green-600 transition duration-300">Relaxed</button>
+        <button id="dav" class="bg-purple-500 text-white py-1 px-4 rounded mx-2 hover:bg-purple-600 transition duration-300">Adventurous</button>
+        <button id="romance" class="bg-pink-500 text-white py-1 px-4 rounded mx-2 hover:bg-pink-600 transition duration-300">Romantic</button>
+    </div>
+</section>
+
+<script>
+    document.getElementById('quizButton').onclick = function() {
+        document.getElementById('quiz').classList.toggle('hidden');
+    };
+</script>
+
+
+<div id="ro" class="hidden mt-6">
+
+<section  class="container mx-auto py-8 ">
+<div class="items-center text-center ">
+<h2 class="font-semibold text-3xl">These Are Perfect For You</h2>
+</div>
+</section>
+
+
+<section class="container mx-auto py-8 ">
+    <div  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.6SKmaJ9Wr6c6eUsvIc4_tgHaHa&pid=Api&P=0&h=220" alt="Perfume" class="w-full h-80 object-cover rounded-t-lg" />
+            <h3 class="text-xl font-semibold mt-2">Marc Jacobs Daisy</h3>
+           
+            <p class="text-lg font-bold mt-2">$59.99</p>
+            <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4">Add to Cart</button>
+        </div>
+    
+    
+        <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.7npxPvTz9Pj6gezTlEfT9wHaJQ&pid=Api&P=0&h=220" alt="Perfume" class="w-full h-80 object-cover rounded-t-lg" />
+            <h3 class="text-xl font-semibold mt-2">Rolf Flowerbomb</h3>
+            
+            <p class="text-lg font-bold mt-2">$59.99</p>
+            <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4">Add to Cart</button>
+        </div>
+
+
+
+        
+        <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.XMO6HJW8QiDIQVNWxrb_7gHaHH&pid=Api&P=0&h=220" alt="Perfume" class="w-full h-72 object-cover rounded-t-lg" />
+            <h3 class="text-xl font-semibold mt-2">Chanel Chance Eau Tendre</h3>
+          
+            <p class="text-lg font-bold mt-2">$59.99</p>
+            <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4">Add to Cart</button>
+        </div>
+
+
+
+        
+        <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+            <img src="https://the-fragrance-shop.imgix.net/products/33_1new.jpg?fm=webp?w=991&dpr=2" alt="Perfume" class="w-full h-72 object-cover rounded-t-lg" />
+            <h3 class="text-xl font-semibold mt-2">Estée Lauder Beautiful</h3>
+            
+            <p class="text-lg font-bold mt-2">$59.99</p>
+            <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4">Add to Cart</button>
+        </div>
+    
+    </div>
+</section>
+
+</div>
+
+
+
+<script>  document.getElementById('romance').onclick = function() {
+    document.getElementById('ro').classList.toggle('hidden');
+};</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rel" class="hidden mt-6">
+
+    <section  class="container mx-auto py-8 ">
+    <div class="items-center text-center ">
+    <h2 class="font-semibold text-3xl">These Are Perfect For You</h2>
+    </div>
+    </section>
+    
+    
+    <section class="container mx-auto py-8 ">
+        <div  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.FgUS6kfk_v5xMthH-k03fwHaJ4&pid=Api&P=0&h=220" alt="Perfume" class="w-full h-80 object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2">Calvin Klein CK One</h3>
+               
+                <p class="text-lg font-bold mt-2">$59.99</p>
+                <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4">Add to Cart</button>
+            </div>
+        
+        
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.-UISg0qlW2j11-oitQMpsAHaJQ&pid=Api&P=0&h=220" alt="Perfume" class="w-full h-80 object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2">Issey Miyake L'Eau d'Issey</h3>
+                
+                <p class="text-lg font-bold mt-2">$59.99</p>
+                <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4">Add to Cart</button>
+            </div>
+    
+    
+    
+            
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.6m5vBwEexFoGYEJ5snCUOAHaHa&pid=Api&P=0&h=220" alt="Perfume" class="w-full h-80 object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2">Dolce</h3>
+              
+                <p class="text-lg font-bold mt-2">$59.99</p>
+                <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4">Add to Cart</button>
+            </div>
+    
+    
+    
+            
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.7o7DNe1QtR26ZO3cjWRZ7AHaEu&pid=Api&P=0&h=220" alt="Perfume" class="w-full h-80 object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2"> Sea Salt</h3>
+                
+                <p class="text-lg font-bold mt-2">$59.99</p>
+                <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4">Add to Cart</button>
+            </div>
+        
+        </div>
+    </section>
+    
+    </div>
+    
+    
+    
+    <script>  document.getElementById('re').onclick = function() {
+        document.getElementById('rel').classList.toggle('hidden');
+    };</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="adv" class="hidden mt-6" >
+
+    <section  class="container mx-auto py-8 ">
+    <div class="items-center text-center ">
+    <h2 class="font-semibold text-3xl">These Are Perfect For You</h2>
+    </div>
+    </section>
+    
+    
+    <section class="container mx-auto py-8 ">
+        <div  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.szFOMnEsq7aFukyjpwD6pAHaHa&pid=Api&P=0&h=220" alt="Perfume" class="w-full h-96 object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2">Acqua di Parma Colonia</h3>
+               
+                <p class="text-lg font-bold mt-2">$59.99</p>
+                <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4">Add to Cart</button>
+            </div>
+        
+        
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.XUXqykT_uQPgmSw6ztyObwAAAA&pid=Api&P=0&h=220" alt="Perfume" class="w-full h-96 object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2">Tom Ford Neroli Portofino</h3>
+                
+                <p class="text-lg font-bold mt-2">$59.99</p>
+                <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4">Add to Cart</button>
+            </div>
+    
+    
+    
+            
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="http://1.bp.blogspot.com/-eZctyNW6oKs/UtVReSqh8NI/AAAAAAAAduc/vSBr2ggye-k/s1600/Hermes-Terre-DHermes.jpg" alt="Perfume" class="w-full h-96 rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2">Terre d'Hermès</h3>
+              
+                <p class="text-lg font-bold mt-2">$59.99</p>
+                <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4">Add to Cart</button>
+            </div>
+    
+    
+    
+            
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.wWW5aVgoqWwYkfOduwnNRgHaHa&pid=Api&P=0&h=220" alt="Perfume" class="w-full h-96 object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2"> Creed Aventus</h3>
+                
+                <p class="text-lg font-bold mt-2">$59.99</p>
+                <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4">Add to Cart</button>
+            </div>
+        
+        </div>
+    </section>
+    
+    </div>
+    
+    
+    
+    <script>  document.getElementById('dav').onclick = function() {
+        document.getElementById('adv').classList.toggle('hidden');
+    };</script>
+
+
+
+
+
+
+
+
+<section class="bg-cover bg-center h-64">
+    <div class="flex items-center justify-center h-full bg-purple-300 bg-opacity-50">
+        <h2 class="text-black text-5xl font-semibold">Best Seller Perfumes</h2>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+    <section id="shop" class="container mx-auto py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-gray-200 p-4 shadow-md rounded-t-lg overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://images.pexels.com/photos/13767417/pexels-photo-13767417.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Perfume" class="w-full h-auto rounded-lg" />
+                <h3 class="text-xl font-semibold mt-2">Floral Bliss</h3>
+                <p class="text-gray-600">A delightful floral scent that embodies romance.</p>
+                <p class="text-lg font-bold mt-2">$49.99</p>
+                <button class="mt-4 w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Add to Cart</button>
+            </div>
+
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://images.pexels.com/photos/11783021/pexels-photo-11783021.jpeg?auto=compress&cs=tinysrgb&w=400" alt="perfume" class="w-full h-auto object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2">Citrus Zest</h3>
+                <p class="text-gray-600">A zesty fragrance that awakens your senses.</p>
+                <p class="text-lg font-bold mt-2">$39.99</p>
+                <button class="mt-4 w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Add to Cart</button>
+            </div>
+
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://www.gulahmedshop.com/media/catalog/product/e/a/earth.jpg?optimize=medium&auto=webp&bg-color=255,255,255&fit=bounds&canvas=2:3&height=525&width=350" alt="perfume" class="w-full h-auto object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2">Ocean Breeze</h3>
+                <p class="text-gray-600">A refreshing scent reminiscent of the sea.</p>
+                <p class="text-lg font-bold mt-2">$54.99</p>
+                <button class="mt-4 w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Add to Cart</button>
+            </div>
+
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://images.pexels.com/photos/7270663/pexels-photo-7270663.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Perfume" class="w-full h-auto object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2">Woodland Essence</h3>
+                <p class="text-gray-600">A warm scent inspired by nature's woods.</p>
+                <p class="text-lg font-bold mt-2">$59.99</p>
+                <button class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 mt-4">Add to Cart</button>
+            </div>
+
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://images.pexels.com/photos/1961791/pexels-photo-1961791.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Perfume" class="w-full h-auto object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2">Spicy Elegance</h3>
+                <p class="text-gray-600">A captivating scent with a hint of spice.</p>
+                <p class="text-lg font-bold mt-2">$64.99</p>
+                <button class="mt-4 w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Add to Cart</button>
+            </div>
+
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://images.pexels.com/photos/965993/pexels-photo-965993.jpeg?auto=compress&cs=tinysrgb&w=400" alt="perfume" class="w-full h-auto object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2">Vanilla Dream</h3>
+                <p class="text-gray-600">A sweet and creamy vanilla fragrance.</p>
+                <p class="text-lg font-bold mt-2">$44.99</p>
+                <button class="mt-4 w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Add to Cart</button>
+            </div>
+
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://images.pexels.com/photos/965730/pexels-photo-965730.jpeg?auto=compress&cs=tinysrgb&w=400" alt="perfume" class="w-full h-auto object-cover rounded-t-lg" />
+                <h3 class="text-xl font-semibold mt-2">Vanilla Dream</h3>
+                <p class="text-gray-600">A sweet and creamy vanilla fragrance.</p>
+                <p class="text-lg font-bold mt-2">$44.99</p>
+                <button class="mt-4 w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Add to Cart</button>
+            </div>
+
+            <div class="bg-gray-200 p-4 shadow-md overflow-hidden rounded-lg object-cover transition-transform duration-200 ease-in-out transform hover:scale-105">
+                <img src="https://images.pexels.com/photos/1961794/pexels-photo-1961794.jpeg?auto=compress&cs=tinysrgb&w=400" alt="perfume" class="w-full h-auto object-cover rounded-t-lg" />
+
+                <h3 class="text-xl font-semibold mt-2">Vanilla Dream</h3>
+                <p class="text-gray-600">A sweet and creamy vanilla fragrance.</p>
+                <p class="text-lg font-bold mt-2">$44.99</p>
+                <button class="mt-4 w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Add to Cart</button>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="bg-cover bg-center h-64">
+        <div class="flex items-center justify-center h-full bg-purple-300 bg-opacity-50">
+            <h2 class="text-black text-5xl font-semibold">OUR PRODUCT COLLECTIONS</h2>
+        </div>
+    </section>
+
+    <section id="collection" class="container mx-auto py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 h-full">
+            <div class="bg-gray-300 p-4 rounded-lg shadow-md">
+                <div class="flex flex-col items-center">
+                    <a href="/menproducts.html"><button class="text-white bg-purple-950 hover:underline font-semibold text-4xl">MEN PERFUMES</button></a>
+                </div>
+                <img src="https://images.pexels.com/photos/13039123/pexels-photo-13039123.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Perfume" class="w-full h-96 object-cover mt-5 rounded-lg" />
+            </div>
+
+            <div class="bg-gray-300 p-4 rounded-lg shadow-md">
+                <div class="flex flex-col items-center">
+                    <a href="/women.html"><button class="text-white bg-purple-950 hover:underline font-semibold text-4xl">WOMEN PERFUMES</button></a>
+                </div>
+                <img src="https://images.pexels.com/photos/28799885/pexels-photo-28799885/free-photo-of-elegant-woman-holding-chanel-perfume-in-paris.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Perfume" class="w-full h-96 rounded-lg mt-5" />
+            </div>
+
+            <div class="bg-gray-300 p-4 rounded-lg shadow-md">
+                <div class="flex flex-col items-center">
+                    <a href="/GIFTBOXEX.HTML"><button class="text-white bg-purple-950 hover:underline font-semibold text-4xl">GIFT BOXES</button></a>
+                </div>
+                <img src="https://img.freepik.com/free-photo/valentines-day-still-life-design_23-2149246360.jpg?ga=GA1.1.398903822.1728317372&semt=ais_hybrid" alt="Perfume" class="w-full h-96 object-cover mt-5 rounded-lg" />
+            </div>
+
+            <div class="bg-gray-300 p-4 rounded-lg shadow-md">
+                <div class="flex flex-col items-center">
+                    <a href="product2.html"><button class="text-white bg-purple-950 hover:underline font-semibold h-20 w-52 text-4xl">ATTARS</button></a>
+                </div>
+                <img src="https://img.freepik.com/premium-photo/close-up-figurine-table_1048944-21752260.jpg?ga=GA1.1.398903822.1728317372&semt=ais_hybrid" alt="Perfume" class="w-full object-cover mt-7 h-96 rounded-lg" />
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="py-20 text-center">
+        <h2 class="text-3xl font-bold mb-8">Our Impact</h2>
+        <div class="flex justify-around">
+            <div class="text-center">
+                <div id="stat1" class="text-5xl font-bold">374843</div>
+                <p class="mt-2">Happy Customers</p>
+            </div>
+            <div class="text-center">
+                <div id="stat2" class="text-5xl font-bold">497483</div>
+                <p class="mt-2">Products Sold</p>
+            </div>
+            <div class="text-center">
+                <div id="stat3" class="text-5xl font-bold">3467</div>
+                <p class="mt-2">Projects Completed</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 bg-gray-300">
+        <h2 class="text-3xl font-bold text-center mb-6">Compare Our Top Products</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-gray-100 border border-gray-300">
+                <thead>
+                    <tr>
+                        <th class="py-2 border">Products</th>
+                        <th class="py-2 border">Price</th>
+                        <th class="py-2 border">Notes</th>
+                        <th class="py-2 border">Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 border">Dunhill-Desire</td>
+                        <td class="py-2 border">$49.99</td>
+                        <td class="py-2 border">Floral, Fresh</td>
+                        <td class="py-2 border">⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 border">Hogo-Boss</td>
+                        <td class="py-2 border">$39.99</td>
+                        <td class="py-2 border">Citrus, Sweet</td>
+                        <td class="py-2 border">⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 border"><big>J.</big>Janan</td>
+                        <td class="py-2 border">$59.99</td>
+                        <td class="py-2 border">Woody, Spicy</td>
+                        <td class="py-2 border">⭐⭐⭐⭐⭐</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+    <section class="py-10 bg-gray-100">
+        <h2 class="text-3xl font-bold text-center mb-6">What Our Customers Say</h2>
+        <div class="flex overflow-x-auto space-x-4 p-5">
+            <div class="bg-white rounded-lg shadow-lg p-4 w-80">
+                <p class="italic">"This perfume is simply amazing! I get compliments all the time."</p>
+                <h4 class="font-bold mt-2">Fatima Zahra</h4>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 w-80">
+                <p class="italic">"The scent lasts all day and I love the packaging!"</p>
+                <h4 class="font-bold mt-2">Mohammad Ali</h4>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 w-80">
+                <p class="italic">"Absolutely in love with my new fragrance!"</p>
+                <h4 class="font-bold mt-2">Aisha Khan</h4>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+                <!-- About Us Section -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                    <p class="text-gray-400">
+                        At Perfume Store, we specialize in exquisite fragrances that cater to every individual’s taste. Our mission is to help you find your perfect scent.
+                    </p>
+                </div>
+    
+                <!-- Quick Links Section -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="flex flex-col space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:underline">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:underline">Shop</a></li>
+                        <li><a href="#" class="text-gray-400 hover:underline">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Us Section -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">Email: <a href="mailto:info@perfumestore.com" class="text-blue-300 hover:underline">info@perfumestore.com</a></p>
+                    <p class="text-gray-400">Phone: +1 234 567 890</p>
+                    <p class="text-gray-400">Address: 123 Perfume St, Fragrance City, CA 12345</p>
+                </div>
+            </div>
+    
+            <div class="mt-8 text-center">
+                <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Pinterest</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="border-t border-gray-700 mt-8 pt-4 text-center">
+            <p class="text-gray-400 text-sm">&copy; 2024 Perfume Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

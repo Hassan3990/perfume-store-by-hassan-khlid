@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200">
+    <div class="bg-gray-200 text-gray-800">
+
+        <header class="bg-gradient-to-r from-purple-600 to-blue-500 text-white shadow-lg">
+            <div class="container mx-auto flex justify-between items-center p-5 text-center">
+                <div class="w-32 h-32 overflow-hidden rounded-full">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/008/145/521/small/luxury-perfume-bottle-logo-design-illustration-for-cosmetics-beauty-salon-company-products-vector.jpg" alt="Circular Image" class="w-full h-full object-cover" />
+                </div>
+    
+              
+    
+                <nav class="ml-2 md:ml-7">
+                    <center>
+                        <ul class="flex flex-wrap justify-center md:space-x-8 space-x-2">
+                            <li><a href="/index.html" class="hover:text-gray-200 transition duration-300">Home</a></li>
+                        
+                            <li><a href="/about.html">About Us</a></li>
+
+                            <li><a href="/product.html" class="hover:text-gray-200 transition duration-300">Products</a></li>
+                            <li>
+                                <a href="/contact.html"  class="hover:text-gray-200 transition duration-300">Contact Us</a>
+                            </li>
+                        </ul>
+                    </center>
+                </nav>
+            </div>
+        </header>
+    
+        <main class="container mx-auto my-10 px-6">
+            <section class="text-center mb-12">
+                <h2 class="text-3xl font-semibold mb-4">Our Story</h2>
+                <p class="text-lg">
+                    At The Great Perfume, we believe that every fragrance tells a story. Founded in the heart of the city, our passion for perfumes drives us to create unique scents that evoke emotions and memories.
+                </p>
+            </section>
+    
+            <section class="flex flex-col md:flex-row items-center mb-12">
+                <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+                    <img src="https://t3.ftcdn.net/jpg/05/81/76/22/240_F_581762206_LBFjddCqeLUzhE9UFqWFFO4DI3XpWRX6.jpg" alt="Perfume Bottle" class="rounded-lg shadow-lg" />
+                </div>
+    
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Our Philosophy</h3>
+                    <p class="text-lg">
+                        We source the finest ingredients from around the globe, ensuring each bottle is a masterpiece. Our commitment to quality and sustainability drives us to craft fragrances that are not only luxurious but also environmentally responsible.
+                    </p>
+                </div>
+            </section>
+    
+            <section class="text-center mb-12">
+                <h2 class="text-3xl font-semibold mb-4">Meet Our Team</h2>
+                <p class="text-lg mb-6">
+                    A diverse group of passionate individuals dedicated to creating unforgettable fragrances.
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <div class="bg-purple-300 shadow-lg rounded-lg p-4">
+                        <img src="https://t4.ftcdn.net/jpg/03/64/21/11/240_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="Team Member" class="rounded-full mb-4 mx-auto" />
+                        <h4 class="font-semibold text-gray-900">Alice Johnson</h4>
+                        <p class="text-gray-900">Founder & CEO</p>
+                    </div>
+                    <div class="bg-purple-300 shadow-lg rounded-lg p-4">
+                        <img src="https://t3.ftcdn.net/jpg/06/01/50/96/240_F_601509638_jDwIDvlnryPRhXPsBeW1nXv90pdlbykC.jpg" alt="Team Member" class="rounded-full mb-4 mx-auto" />
+                        <h4 class="font-semibold text-gray-900">Mark Smith</h4>
+                        <p class="text-gray-900">Chief Perfumer</p>
+                    </div>
+                    <div class="bg-purple-300 shadow-lg rounded-lg p-4">
+                        <img src="https://t3.ftcdn.net/jpg/06/20/53/68/240_F_620536814_v0h5OzfuAMjJL9of1MRnZAjYgAje8Y0z.jpg" alt="team member" class="rounded-full mb-4 mx-auto" />
+                        <h4 class="font-semibold text-gray-900">Lily Brown</h4>
+                        <p class="text-gray-900">Marketing Director</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="text-center">
+                <h2 class="text-3xl font-semibold mb-4">Join Us</h2>
+                <p class="text-lg mb-6">
+                    Discover the world of exquisite fragrances and become part of our community. 
+                    Subscribe to our newsletter for the latest updates and exclusive offers.
+                </p>
+                <!-- <a href="#" class="inline-block bg-gray-900 text-white px-6 py-3 rounded hover:bg-gray-700 transition">Subscribe Now</a> -->
+                <button id="openPopup" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                    Subscribe Now
+                </button>
+            
+                <div id="popup" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+                    <div class="bg-white rounded-lg p-6 shadow-lg">
+                        <h2 class="text-xl font-bold mb-4">THANKYOU!</h2>
+                        <p class="mb-4">You have Subscribed to our website,and you will stay updated with the news from our website</p>
+                        <button id="closePopup" class="bg-red-600 text-white py-1 px-3 rounded hover:bg-red-700 transition duration-300">
+                            Close
+                        </button>
+                    </div>
+
+            </section>
+        </main>
+
+
+
+    <script>
+        document.getElementById('openPopup').onclick = function() {
+            document.getElementById('popup').classList.remove('hidden');
+        };
+
+        document.getElementById('closePopup').onclick = function() {
+            document.getElementById('popup').classList.add('hidden');
+        };
+    </script>
+
+</div>
+
+
+
+
+         <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+                   
+                     <div>
+                        <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                        <p class="text-gray-400">
+                            At Perfume Store, we specialize in exquisite fragrances that cater to every individual’s taste. Our mission is to help you find your perfect scent.
+                        </p>
+                    </div>
+        
+                  
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <ul class="flex flex-col space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:underline">Home</a></li>
+                            <li><a href="#" class="text-gray-400 hover:underline">Shop</a></li>
+                            <li><a href="#" class="text-gray-400 hover:underline">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:underline">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                        <p class="text-gray-400">Email: <a href="mailto:info@perfumestore.com" class="text-blue-300 hover:underline">info@perfumestore.com</a></p>
+                        <p class="text-gray-400">Phone: +1 234 567 890</p>
+                        <p class="text-gray-400">Address: 123 Perfume St, Fragrance City, CA 12345</p>
+                    </div>
+                </div>
+        
+                <div class="mt-8 text-center">
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="border-t border-gray-700 mt-8 pt-4 text-center">
+                <p class="text-gray-400 text-sm">&copy; 2024 Perfume Store. All rights reserved.</p>
+            </div>
+        </footer> 
+         
+     
+    </div>
+    
+</body>
+</html>

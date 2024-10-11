@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-purple-200">
+
+        <header class="bg-gradient-to-r from-purple-600 to-blue-500 text-white shadow-lg">
+            <div class="container mx-auto flex justify-between items-center p-5 text-center">
+                <div class="w-32 h-32 overflow-hidden rounded-full">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/008/145/521/small/luxury-perfume-bottle-logo-design-illustration-for-cosmetics-beauty-salon-company-products-vector.jpg" alt="Circular Image" class="w-full h-full object-cover" />
+                </div>
+    
+               
+    
+                <nav class="ml-2 md:ml-7">
+                    <center>
+                        <ul class="flex flex-wrap justify-center md:space-x-8 space-x-2">
+                            <li><a href="/index.html" class="hover:text-gray-200 transition duration-300">Home</a></li>
+                            <li><a href="/about.html" class="hover:text-gray-200 transition duration-300">
+                                About Us</a></li>
+                            <li><a href="/product.html" class="hover:text-gray-200 transition duration-300">Products</a></li>
+                            <li>
+                                <a href="/contact.html" class="hover:text-gray-200 transition duration-300">Contact Us</a>
+                            </li> 
+                        </ul>
+                    </center>
+                </nav>
+            </div>
+        </header>
+    
+        <div class="max-w-2xl mx-auto p-6 bg-purple-300 shadow-md rounded-lg mt-10">
+            <h1 class="text-2xl font-bold mb-6">Get in Touch</h1>
+            <p class="mb-4">We'd love to hear from you! Please fill out the form below or reach out via the contact information provided.</p>
+    
+            <h2 class="text-lg font-semibold mb-2">Contact Information:</h2>
+            <p><strong>Email:</strong> <a href="mailto:your-email@example.com" class="text-blue-900">your-email@example.com</a></p>
+            <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+            <p><strong>Address:</strong> Your Street, Your City, Your State, Your Country</p>
+    
+            <h2 class="text-lg font-semibold mt-6 mb-2">Contact Form:</h2>
+            <form action="submit_form.php" method="POST">
+                <div class="mb-4">
+                    <label htmlFor="name" class="block text-gray-700">Name:</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md" />
+                </div>
+                <div class="mb-4">
+                    <label htmlFor="email" class="block text-gray-700">Email:</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md" />
+                </div>
+                <div class="mb-4">
+                    <label htmlFor="subject" class="block text-gray-700">Subject:</label>
+                    <input type="text" id="subject" name="subject" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md" />
+                </div>
+                <div class="mb-4">
+                    <label htmlFor="message" class="block text-gray-700">Message:</label>
+                    <textarea id="message" name="message" rows={4} required class="mt-1 block w-full p-2 border border-gray-300 rounded-md"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 rounded hover:bg-blue-700">Send Message</button>
+            </form>
+    
+            <h2 class="text-lg font-semibold mt-6 mb-2">Follow Us:</h2>
+            <p>
+                <a href="#" class="text-blue-600 hover:underline">Facebook</a> | 
+                <a href="#" class="text-blue-600 hover:underline">Twitter</a> | 
+                <a href="#" class="text-blue-600 hover:underline">Instagram</a>
+            </p>
+        </div>
+    
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+                    <!-- About Us Section -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                        <p class="text-gray-400">
+                            At Perfume Store, we specialize in exquisite fragrances that cater to every individual’s taste. Our mission is to help you find your perfect scent.
+                        </p>
+                    </div>
+        
+                    <!-- Quick Links Section -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <ul class="flex flex-col space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:underline">Home</a></li>
+                            <li><a href="#" class="text-gray-400 hover:underline">Shop</a></li>
+                            <li><a href="#" class="text-gray-400 hover:underline">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:underline">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Contact Us Section -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                        <p class="text-gray-400">Email: <a href="mailto:info@perfumestore.com" class="text-blue-300 hover:underline">info@perfumestore.com</a></p>
+                        <p class="text-gray-400">Phone: +1 234 567 890</p>
+                        <p class="text-gray-400">Address: 123 Perfume St, Fragrance City, CA 12345</p>
+                    </div>
+                </div>
+        
+                <div class="mt-8 text-center">
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="border-t border-gray-700 mt-8 pt-4 text-center">
+                <p class="text-gray-400 text-sm">&copy; 2024 Perfume Store. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+</body>
+</html>
